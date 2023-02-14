@@ -10,6 +10,14 @@ export class CoursesComponent {
   title = 'List of courses';
   courses;
   email: string = 'me@email.com';
+  course = {
+    title: 'The Complete Angular Course',
+    rating: 4.9745,
+    students: 30123,
+    price: 190.95,
+
+    releaseDate: new Date(2016, 3, 1),
+  };
   onSave($event: any) {
     console.log('button was clicked', $event);
   }
