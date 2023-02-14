@@ -9,11 +9,12 @@ import { CoursesService } from './courses.service';
 export class CoursesComponent {
   title = 'List of courses';
   courses;
+  email: string = 'me@email.com';
   onSave($event: any) {
     console.log('button was clicked', $event);
   }
   onKeyUp() {
-    console.log('Enter was pressed');
+    console.log(this.email);
   }
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
