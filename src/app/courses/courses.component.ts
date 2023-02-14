@@ -12,6 +12,9 @@ export class CoursesComponent {
   onSave($event: any) {
     console.log('button was clicked', $event);
   }
+  onKeyUp() {
+    console.log('Enter was pressed');
+  }
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
   }
