@@ -13,7 +13,7 @@
     <li class="list-group-item">{{ course.students | number }}</li>
     <li class="list-group-item">{{ course.rating | number : "1.2-2" }}</li>
     <li class="list-group-item">
-      {{ course.price | currency : "USD" : true : "3.1-1" }}
+      {{ course.price | currency : "USD" : "symbol" : "3.1-1" }}
     </li>
     <li class="list-group-item">{{ course.releaseDate | date : "medium" }}</li>
   </ul>
