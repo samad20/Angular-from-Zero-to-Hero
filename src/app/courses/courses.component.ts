@@ -9,6 +9,9 @@ import { CoursesService } from './courses.service';
 export class CoursesComponent {
   title = 'List of courses';
   courses;
+  onSave($event: any) {
+    console.log('button was clicked', $event);
+  }
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
   }
