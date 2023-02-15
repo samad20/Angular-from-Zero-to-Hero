@@ -19,17 +19,26 @@
   </ul>
   <div>
     <br />
+    <p>
+      Example for using ngModel. Change email then press eneter. See consol and
+      will notice the change.
+    </p>
     <input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
   </div>
   <br />
-
   <div>
-    <button class="btn btn-primary" (click)="onSave($event)">Save</button>
-  </div>
-
-  <div>
+    <p>
+      Example for using ngModel and custom pipes. Enter any text here and will
+      notice that the first letter will be cpitilaze except
+      prepositions(and,of).
+    </p>
     <input type="text" [(ngModel)]="capital" />
     <br />
     {{ capital | titleCase }}
+  </div>
+  <br />
+  <div>
+    <p>Press the button. Then, see consol and will notice the message.</p>
+    <button class="btn btn-primary" (click)="onSave($event)">Save</button>
   </div>
 </div>
