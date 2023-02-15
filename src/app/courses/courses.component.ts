@@ -7,6 +7,10 @@ import { CoursesService } from './courses.service';
   styleUrls: ['./courses.component.scss'],
 })
 export class CoursesComponent {
+  post = {
+    title: '',
+    isFavoriteFromCourses: true,
+  };
   title = 'List of courses';
   courses;
   email: string = 'me@email.com';
