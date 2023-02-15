@@ -26,4 +26,10 @@
   <div>
     <button class="btn btn-primary" (click)="onSave($event)">Save</button>
   </div>
+
+  <div>
+    <input type="text" [(ngModel)]="capital" />
+    <br />
+    {{ capital | titleCase }}
+  </div>
 </div>

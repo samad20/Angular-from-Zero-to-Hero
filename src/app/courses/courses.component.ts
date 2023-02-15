@@ -10,6 +10,7 @@ export class CoursesComponent {
   title = 'List of courses';
   courses;
   email: string = 'me@email.com';
+  capital: string = '';
   course = {
     title: 'The Complete Angular Course',
     rating: 4.9745,
