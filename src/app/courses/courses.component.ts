@@ -29,6 +29,9 @@ export class CoursesComponent {
   onKeyUp() {
     console.log(this.email);
   }
+  onFavoriteChanged() {
+    console.log('Favorite changed');
+  }
   constructor(service: CoursesService) {
     this.courses = service.getCourses();
   }
