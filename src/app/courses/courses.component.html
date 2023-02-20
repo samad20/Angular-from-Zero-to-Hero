@@ -1,8 +1,14 @@
 <!-- this use interpolation -->
 <div class="container">
-  <h1></h1>
   <!-- this title use proprty binding -->
   <!-- <h1 [textContent]="title"></h1> -->
+  <div>
+    <app-panel>
+      <div class="headingpanel">Angular from Zero to Hero!</div>
+      <div class="bodypanel">Best course to lern Angular in the World!</div>
+    </app-panel>
+  </div>
+  <br />
   <div class="card" style="width: 18rem">
     <ul class="list-group list-group-flush">
       <li class="list-group-item active">{{ title }}</li>
