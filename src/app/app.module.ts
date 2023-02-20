@@ -10,9 +10,10 @@ import { FormsModule } from '@angular/forms';
 import { TitleCasePipe } from './title-case.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
+import { LikeButtonComponent } from './like-button/like-button.component';
 
 @NgModule({
-  declarations: [AppComponent, CoursesComponent, TitleCasePipe, FavoriteComponent, PanelComponent],
+  declarations: [AppComponent, CoursesComponent, TitleCasePipe, FavoriteComponent, PanelComponent, LikeButtonComponent],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [CoursesService],
   bootstrap: [AppComponent],
