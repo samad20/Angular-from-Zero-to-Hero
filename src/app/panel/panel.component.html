@@ -1,1 +1,9 @@
-<p>panel works!</p>
+<div class="card" style="margin-top: 8px">
+  <h5 class="card-header">
+    <ng-content select=".headingpanel"></ng-content>
+  </h5>
+
+  <div class="card-body">
+    <ng-content select=".bodypanel"></ng-content>
+  </div>
+</div>
