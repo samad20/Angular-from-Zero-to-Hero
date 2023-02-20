@@ -2,12 +2,16 @@
 <div class="container">
   <!-- this title use proprty binding -->
   <!-- <h1 [textContent]="title"></h1> -->
-  <div>
-    <app-panel>
-      <div class="headingpanel">Angular from Zero to Hero!</div>
-      <div class="bodypanel">Best course to lern Angular in the World!</div>
-    </app-panel>
-  </div>
+
+  <app-panel>
+    <div class="headingpanel">Angular from Zero to Hero!</div>
+    <div class="bodypanel">
+      Best course to lern Angular in the World!<br />
+      <like-button
+        >[likeCounter]="likes.likeCounter" [isLiked]="likes.isLiked"
+      </like-button>
+    </div>
+  </app-panel>
   <br />
   <div class="card" style="width: 18rem">
     <ul class="list-group list-group-flush">
@@ -83,8 +87,9 @@
       <button class="btn btn-primary" (click)="onSave($event)">Save</button>
     </div>
   </div>
+
+  <footer>
+    <div class="text-center p-4">© Musaab Al Jahdhami</div>
+    <!-- Copyright -->
+  </footer>
 </div>
-<footer>
-  <div class="text-center p-4">© Musaab Al Jahdhami</div>
-  <!-- Copyright -->
-</footer>
