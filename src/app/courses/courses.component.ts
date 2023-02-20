@@ -11,6 +11,10 @@ export class CoursesComponent {
     title: '',
     isFavoriteFromCourses: true,
   };
+  likes = {
+    likeCounter: 0,
+    isLiked: false,
+  };
   title = 'List of courses';
   courses;
   email: string = 'me@email.com';
