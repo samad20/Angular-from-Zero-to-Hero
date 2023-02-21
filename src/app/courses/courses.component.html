@@ -19,17 +19,17 @@
     </div>
     <div *ngIf="courses.length > 0; then courselist; else nocourse"></div>
     <ng-template #courselist>
-      <label class="card-body">Great! We have courses!</label></ng-template
-    >
+      <label class="card-body">Great! We have courses!</label>
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item active">{{ title }}</li>
+        <li class="list-group-item" *ngFor="let course of courses">
+          {{ course }}
+        </li>
+      </ul>
+    </ng-template>
     <ng-template #nocourse>
       <label class="card-body">No Courses yet!</label></ng-template
     >
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item active">{{ title }}</li>
-      <li class="list-group-item" *ngFor="let course of courses">
-        {{ course }}
-      </li>
-    </ul>
   </div>
   <br />
   <div class="card">
