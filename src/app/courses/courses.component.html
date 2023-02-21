@@ -33,6 +33,35 @@
   </div>
   <br />
   <div class="card">
+    <div class="card-body text-muted">
+      There is two views, Map and List.(using *ngSwitchCase)
+    </div>
+    <ul class="nav nav-pills card-body">
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="viewMode == 'map'"
+          (click)="viewMode = 'map'"
+          >Map View</a
+        >
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [class.active]="viewMode == 'list'"
+          (click)="viewMode = 'list'"
+          >List View</a
+        >
+      </li>
+    </ul>
+    <div class="card-body" [ngSwitch]="viewMode">
+      <div *ngSwitchCase="'map'">Map View Content</div>
+      <div *ngSwitchCase="'list'">List View Content</div>
+      <div *ngSwitchDefault>Choose best view for you</div>
+    </div>
+  </div>
+  <br />
+  <div class="card">
     <favorite
       [is-favorite]="post.isFavoriteFromCourses"
       (change)="onFavoriteChanged()"
@@ -97,8 +126,6 @@
       <button class="btn btn-primary" (click)="onSave($event)">Save</button>
     </div>
   </div>
-
-  <div class="card"></div>
 
   <footer>
     <div class="text-center p-4">© Musaab Al Jahdhami</div>
