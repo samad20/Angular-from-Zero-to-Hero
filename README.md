@@ -1,4 +1,4 @@
-# Angular: Beginner to Pro
+# Angular from Zero to Hero!
 
 This repository is a summary for basic of Angular. It cover these topics:
 
