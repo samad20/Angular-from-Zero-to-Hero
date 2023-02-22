@@ -85,6 +85,14 @@
   </div>
   <br />
   <div class="card">
+    <div class="card-body text-muted">
+      Example for using ngModel. Change email then press eneter. See consol and
+      will notice the change.
+      <input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
+    </div>
+  </div>
+  <br />
+  <div class="card">
     <favorite
       [is-favorite]="post.isFavoriteFromCourses"
       (change)="onFavoriteChanged()"
@@ -115,36 +123,22 @@
   </div>
   <br />
   <div class="card">
-    <div>
-      <br />
-      <div class="card-body text-muted">
-        Example for using ngModel. Change email then press eneter. See consol
-        and will notice the change.
-      </div>
-      <div class="card-body">
-        <input type="text" [(ngModel)]="email" (keyup.enter)="onKeyUp()" />
-      </div>
+    <div class="card-body text-muted">
+      Example for using ngModel and custom pipes. Enter any text here and will
+      notice that the first letter will be cpitilaze except
+      prepositions(and,of).
     </div>
+    <div class="card-body">
+      <input type="text" [(ngModel)]="capital" />
+    </div>
+    {{ capital | titleCase }}
     <br />
-    <div>
-      <div class="card-body text-muted">
-        Example for using ngModel and custom pipes. Enter any text here and will
-        notice that the first letter will be cpitilaze except
-        prepositions(and,of).
-      </div>
-      <div class="card-body">
-        <input type="text" [(ngModel)]="capital" />
-      </div>
-      {{ capital | titleCase }}
-      <br />
-    </div>
   </div>
   <br />
   <div class="card">
     <div class="card-body text-muted">
       Press the button. Then, see consol and will notice the message.
     </div>
-
     <div class="card-body">
       <button class="btn btn-primary" (click)="onSave($event)">Save</button>
     </div>
