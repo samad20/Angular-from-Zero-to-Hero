@@ -62,6 +62,29 @@
   </div>
   <br />
   <div class="card">
+    <div class="card-body text-muted">
+      There is a course List which have the ID and name of the course. ngFor was
+      used to mange this list.
+    </div>
+    <div class="card-body">
+      <button class="btn btn-primary" (click)="onAdd()">Add</button>
+    </div>
+    <div class="card-body">
+      <ul>
+        <li *ngFor="let course of coursesList; trackBy: trackCource">
+          {{ course.name }}
+          <button class="btn btn-outline-primary" (click)="onRemove(course)">
+            Remove
+          </button>
+          <button class="btn btn-outline-primary" (click)="onChange(course)">
+            Change
+          </button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <br />
+  <div class="card">
     <favorite
       [is-favorite]="post.isFavoriteFromCourses"
       (change)="onFavoriteChanged()"
