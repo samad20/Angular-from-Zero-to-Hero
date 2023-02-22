@@ -11,9 +11,10 @@ import { TitleCasePipe } from './title-case.pipe';
 import { FavoriteComponent } from './favorite/favorite.component';
 import { PanelComponent } from './panel/panel.component';
 import { LikeButtonComponent } from './like-button/like-button.component';
+import { InputFormatDirective } from './input-format.directive';
 
 @NgModule({
-  declarations: [AppComponent, CoursesComponent, TitleCasePipe, FavoriteComponent, PanelComponent, LikeButtonComponent],
+  declarations: [AppComponent, CoursesComponent, TitleCasePipe, FavoriteComponent, PanelComponent, LikeButtonComponent, InputFormatDirective],
   imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
   providers: [CoursesService],
   bootstrap: [AppComponent],
