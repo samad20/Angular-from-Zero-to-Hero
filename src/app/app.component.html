@@ -1,1 +1,16 @@
 <app-courses></app-courses>
+<div class="container">
+  <br />
+  <div class="card">
+    <div class="card-body text-muted">
+      Enter any text here then press Tab (By default the text will changed to
+      upper case). Directive of input-format was used.
+    </div>
+    <div class="card-body">
+      <input type="text" appInputFormat [format]="'uppercase'" />
+    </div>
+  </div>
+</div>
+<footer>
+  <div class="text-center p-4">© Musaab Al Jahdhami</div>
+</footer>
