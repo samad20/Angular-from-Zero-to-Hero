@@ -5,9 +5,9 @@ This repository is a summary for basic of Angular. It cover these topics:
 - Angular Fundamentals
   - Angular CLI
   - Templates
-  -  Services
-- Dependency Injection 
-  - Displaying Data and Handling Events 
+  - Services
+  - Dependency Injection 
+- Displaying Data and Handling Events 
   - Bindings
   - Pipes
 - Building Re-usable Components
