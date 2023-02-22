@@ -1,6 +1,16 @@
-<span
+<!-- <span
   class="bi"
   [class.bi-star-fill]="isFavorite"
   [class.bi-star]="!isFavorite"
+  (click)="onClick()"
+></span> -->
+
+<!-- or use: -->
+<span
+  class="bi"
+  [ngClass]="{
+    'bi-star-fill': isFavorite,
+    'bi-star': !isFavorite
+  }"
   (click)="onClick()"
 ></span>
